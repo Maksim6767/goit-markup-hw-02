@@ -8,21 +8,24 @@
    --primery-text-color:#757575;
    --title-text-color: #212121;
    --accent-text-color:#FFFFFF;
-   --primery-bg-color: #2196F3;
+   --primery-bg-color: #FFFFFF;
+   --secondary-bg-color:#2F303A;
+   --button-bg-color: #2196F3;
 }
  body {
-    background-color: #ffffff;
+    background-color: var(--primery-bg-color);
     color: var(--primery-text-color);
+    font-family:link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet";
  }   
  .list {
    list-style: none;
  }
  /* Logo */
  .logo {
-    color: #2196F3;
+    color: var(--button-bg-color)
  }
  .logo-studio {
-     color:#212121;
+   color: var(--primery-text-color)
  }
  /* Site nav */
  .site-nav .link {
@@ -30,21 +33,21 @@
  } 
  .site-nav .link:hover,
  .site-nav .link:focus {
-    color:#2196F3;
+   color:var(--button-bg-color)
  }
  /* Site auth */
   .auth .link {
-     color: var(--primery-text-color);
+   color: var(--primery-text-color);
   }
 .auth .link:hover,
 .auth .link:focus {
-   color: var(--primery-bg-color);
+   color: var(--button-bg-color);
 }
 
  /* Hero */
 .hero-title {
-  background: #2F303A;
-  color: var(--accent-text-color);
+   background-color: var(--secondary-bg-color);
+   color: var(--accent-text-color);
 }
 /* Section */
 .section-title {
@@ -52,6 +55,16 @@
 }
 /* Button */
 .button {
-color: var(--accent-text-color);
-background-color: var(--primery-bg-color);
+   color: var(--accent-text-color);
+   background-color: var(--button-bg-color);
+}
+/* Footer */
+.adress {
+   background-color: var(--secondary-bg-color);  
+}
+.adress .logo-studio,
+.adress-title,
+.adress-link
+ {
+   color: var(--accent-text-color);
 }
