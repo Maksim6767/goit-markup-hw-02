@@ -15,17 +15,23 @@
  body {
     background-color: var(--primery-bg-color);
     color: var(--primery-text-color);
-    font-family:link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet";
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03px;
  }   
  .list {
    list-style: none;
  }
  /* Logo */
- .logo {
-    color: var(--button-bg-color)
- }
+ .logo,
  .logo-studio {
-   color: var(--primery-text-color)
+   color: var(--button-bg-color);
+   font-family: Raleway;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+ }
+.logo-studio {
+   color: var(--title-text-color);
  }
  /* Site nav */
  .site-nav .link {
@@ -33,7 +39,10 @@
  } 
  .site-nav .link:hover,
  .site-nav .link:focus {
-   color:var(--button-bg-color)
+   color:var(--button-bg-color);
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
  }
  /* Site auth */
   .auth .link {
@@ -42,21 +51,68 @@
 .auth .link:hover,
 .auth .link:focus {
    color: var(--button-bg-color);
-}
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   }
 
  /* Hero */
 .hero-title {
    background-color: var(--secondary-bg-color);
    color: var(--accent-text-color);
-}
-/* Section */
-.section-title {
-   color: var(--title-text-color);
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   text-align: center;
+   letter-spacing: 0.06px;
+   text-transform: uppercase;
 }
 /* Button */
 .button {
    color: var(--accent-text-color);
    background-color: var(--button-bg-color);
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.89;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
+}
+
+/* Section benefits*/
+.section-title {
+   color: var(--title-text-color);
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.17;
+}
+.section-text {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+}
+/* Section Work, Our team*/
+.work-title,
+.team-title
+{
+   color:var(--title-text-color);
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+}
+.photo-title {
+   color: var(--title-text-color);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+}
+.photo-text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: center;
 }
 /* Footer */
 .adress {
@@ -67,4 +123,11 @@
 .adress-link
  {
    color: var(--accent-text-color);
+}
+.adress-title,
+.adress-link {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
 }
