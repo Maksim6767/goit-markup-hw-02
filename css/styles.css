@@ -4,6 +4,7 @@
 
  /* Основной цвет фона #ffffff */
  /* Вторичныйй цвет фона #2196F3 */
+ 
 :root {
    --primery-text-color:#757575;
    --title-text-color: #212121;
@@ -44,6 +45,9 @@
  }
  .link {
     color: var(--title-text-color);
+ }
+ .site-nav .link.current {
+   color: var(--button-bg-color);
  }
  .site-nav .link:hover {
    color:var(--button-bg-color);
@@ -107,14 +111,17 @@
 }
 /* Section Work, Our team*/
 .work-title,
-.team-title
-{
+.team-title {
    color:var(--title-text-color);
    font-weight: 700;
    font-size: 36px;
    line-height: 1.17;
    text-align: center;
 }
+.team {
+background-color:var(--portfolio-bg-color);
+}
+
 .photo-title {
    color: var(--title-text-color);
    font-weight: 500;
@@ -145,13 +152,18 @@
    font-size: 14px;
    line-height: 1.71;
 }
-
+.adress-link:hover {
+   color: var(--button-bg-color);
+}
+.adress-link:focus {
+   color: var(--primery-text-color);
+}
 /* Portfolio */
 /* Buttons */
 .btn .color {
    color: var(--title-text-color);
    background-color: var(--portfolio-bg-color); 
-  
+   font-family: inherit;
    font-size: 16px;
    font-weight: 500;
    line-height: 1.63;
