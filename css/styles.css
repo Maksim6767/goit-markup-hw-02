@@ -7,10 +7,11 @@
 :root {
    --primery-text-color:#757575;
    --title-text-color: #212121;
-   --accent-text-color:#FFFFFF;
-   --primery-bg-color: #FFFFFF;
-   --secondary-bg-color:#2F303A;
-   --button-bg-color: #2196F3;
+   --accent-text-color:#ffffff;
+   --primery-bg-color: #ffffff;
+   --secondary-bg-color:#2f303a;
+   --button-bg-color: #2196f3;
+   --portfolio-bg-color: #f5f4fA;
 }
  body {
     background-color: var(--primery-bg-color);
@@ -34,29 +35,40 @@
    color: var(--title-text-color);
  }
  /* Site nav */
- .site-nav .link {
-   color: var(--title-text-color);
- } 
- .site-nav .link:hover,
- .site-nav .link:focus {
+.site-nav {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02px;
+ }
+ .link {
+    color: var(--title-text-color);
+ }
+ .site-nav .link:hover {
    color:var(--button-bg-color);
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 1.14;
+ }
+ .site-nav .link:focus {
+   color: var(--primery-text-color);
  }
  /* Site auth */
-  .auth .link {
-   color: var(--primery-text-color);
-  }
-.auth .link:hover,
-.auth .link:focus {
-   color: var(--button-bg-color);
+  .auth {
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
+   letter-spacing: 0.02px;
+}
+.auth .link {
+   color: var(--primery-text-color);
+}
+.auth .link:hover {
+   color: var(--button-bg-color);
    }
-
- /* Hero */
+.auth .link:focus {
+   color: var(--title-text-color);
+}
+ 
+/* Hero */
 .hero-title {
    background-color: var(--secondary-bg-color);
    color: var(--accent-text-color);
@@ -78,7 +90,9 @@
    text-align: center;
    letter-spacing: 0.06em;
 }
-
+.button:hover {
+   background-color:var(--secondary-bg-color);
+}
 /* Section benefits*/
 .section-title {
    color: var(--title-text-color);
@@ -130,4 +144,34 @@
    font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
+}
+
+/* Portfolio */
+/* Buttons */
+.btn .color {
+   color: var(--title-text-color);
+   background-color: var(--portfolio-bg-color); 
+  
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.63;
+}
+.btn .color:hover {
+   color: var(--accent-text-color);
+   background-color: var(--button-bg-color);
+}
+
+/* Cards */
+.card-title {
+   color: var(--title-text-color);
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+}
+.card-text {
+   color: var(--primery-text-color);
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.88;
 }
