@@ -106,7 +106,6 @@
    line-height: 1.17;
 }
 .section-text {
-   font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
 }
@@ -131,7 +130,6 @@ background-color:var(--portfolio-bg-color);
    text-align: center;
 }
 .photo-text {
-   font-weight: 400;
    font-size: 16px;
    line-height: 19px;
    text-align: center;
@@ -149,7 +147,6 @@ background-color:var(--portfolio-bg-color);
 .adress-title,
 .adress-link {
    font-style: normal;
-   font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
 }
@@ -185,7 +182,6 @@ background-color:var(--portfolio-bg-color);
 }
 .card-text {
    color: var(--primery-text-color);
-   font-weight: 400;
    font-size: 16px;
    line-height: 1.88;
 }
