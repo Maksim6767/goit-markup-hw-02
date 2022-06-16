@@ -10,9 +10,10 @@
    --title-text-color: #212121;
    --accent-text-color:#ffffff;
    --primery-bg-color: #ffffff;
+   --team-bg-color: #f5f4fA; 
    --secondary-bg-color:#2f303a;
    --button-bg-color: #2196f3;
-   --portfolio-bg-color: #f5f4fA;
+   --main-bg-color: #e5e5e5;
 }
  body {
     background-color: var(--primery-bg-color);
@@ -99,6 +100,10 @@
    background-color:var(--secondary-bg-color);
 }
 /* Section benefits*/
+.section,
+.work {
+   background-color: var(--main-bg-color);
+}
 .section-title {
    color: var(--title-text-color);
    font-weight: 700;
@@ -119,7 +124,7 @@
    text-align: center;
 }
 .team {
-background-color:var(--portfolio-bg-color);
+background-color:var(--team-bg-color);
 }
 
 .photo-title {
@@ -173,6 +178,10 @@ background-color:var(--portfolio-bg-color);
 }
 
 /* Cards */
+.cards {
+   background-color: var(--main-bg-color);
+}
+
 .card-title {
    color: var(--title-text-color);
    font-weight: 700;
